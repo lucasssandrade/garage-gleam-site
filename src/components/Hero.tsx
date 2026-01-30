@@ -45,22 +45,21 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+            <button 
+              onClick={scrollToContact}
+              className="inline-flex items-center justify-center gap-2 bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 py-4 rounded-lg font-semibold text-lg transition-all hover:scale-105"
+            >
+              Solicitar Orçamento
+            </button>
             <a 
               href="https://wa.me/5511977035404?text=Olá! Gostaria de agendar um serviço." 
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 py-4 rounded-lg font-semibold text-lg transition-all hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 border-2 border-primary-foreground/30 hover:border-secondary text-primary-foreground hover:text-secondary px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
             >
               <Phone className="w-5 h-5" />
               Agendar pelo WhatsApp
             </a>
-            <button 
-              onClick={scrollToContact}
-              className="inline-flex items-center justify-center gap-2 border-2 border-primary-foreground/30 hover:border-secondary text-primary-foreground hover:text-secondary px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
-            >
-              <MapPin className="w-5 h-5" />
-              Como Chegar
-            </button>
           </div>
 
           {/* Quick Info */}
